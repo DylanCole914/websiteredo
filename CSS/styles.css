@@ -187,13 +187,13 @@ a {
 }
 
 .icon-container {
-  display: inline-flex;
-  justify-content: center;
   align-items: center;
   background: #f3f9f8;
-  width: 64px;
-  height: 64px;
   border-radius: 100%;
+  display: inline-flex;
+  height: 64px;
+  justify-content: center;
+  width: 64px;
 }
 
 .icon-container--accent {
@@ -208,7 +208,7 @@ a {
   font-size: 1.8rem;
   font-weight: 600;
   margin: 1rem 0;
-  padding: 2rem 3rem;
+  padding: 2rem 4vw;
   outline: 0;
   text-align: center;
   text-transform: uppercase;
@@ -300,6 +300,7 @@ a {
   border: 0;
   flex-grow: 1;
   padding: 1.5rem 2rem;
+  width: 0;
 }
 
 .input-group .btn {
@@ -509,6 +510,11 @@ a {
   padding: 3rem;
 }
 
+.testimonial .quote {
+  margin: 2rem 0;
+  font-size: 110%;
+}
+
 .testimonial__image {
   position: relative;
 }
@@ -609,7 +615,7 @@ a {
 
 /* Blocks */
 .block {
-  --padding-vertical: 6rem;
+  --padding-vertical: 5rem;
   padding: var(--padding-vertical) 2rem;
 }
 
@@ -635,12 +641,12 @@ a {
 
 .block--skewed-right {
   padding-bottom: calc(var(--padding-vertical) +4rem);
-  clip-path: polygon(0% 0%, 100% 0, 100% 100%, 0 90%);
+  clip-path: polygon(0% 0%, 100% 0, 100% 100%, 0 95%);
 }
 
 .block--skewed-left {
   padding-bottom: calc(var(--padding-vertical) +4rem);
-  clip-path: polygon(0% 0%, 100% 0, 100% 80%, 0 100%);
+  clip-path: polygon(0% 0%, 100% 0, 100% 95%, 0 100%);
 }
 
 .container {
@@ -743,8 +749,9 @@ a {
 }
 
 .block-domain__prices {
+  color: var(--color-headings);
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, 6rem);
   font-size: 2rem;
   font-weight: 600;
@@ -772,7 +779,7 @@ a {
 /* Features Block */
 .feature {
   gap: 4rem 2rem;
-  margin: 12rem;
+  margin: 12rem 0;
 }
 
 .feature:first-of-type {
